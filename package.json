@@ -1,0 +1,22 @@
+{
+  "name": "strategy_connect_tests",
+  "version": "1.0.0",
+  "description": "testing StConnect",
+  "main": "index.js",
+   "scripts": {
+    "cy:run": "cypress run --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "test": "npm run cy:run || npm run posttest",
+    "posttest": "npm run allure:report",
+    "openReport": "allure open ./allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "strategy_connect_test"
+  },
+  "author": "Brenda",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.13.0"
+  }
+}
