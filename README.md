@@ -23,4 +23,4 @@ Note: before running the project you need to have node.js installed.
 |ID|Description| Command |
 | :---: | :--- | :--- |
 |1|Service Packages |1. Navigate to `https://www.strategyconnect.co/` page<br>2. Verify if Home page has been opened<br>3. Click the "KnowMore" button on "Technology Due Diligence" section on Home page<br>4. Verify if the Strategy Service page got launched<br>5. Click the "KnowMore" button on "Technology Due Diligence" section on Strategy Service<br>6Verify if the Technical Due Diligence Page has been launched.<br>
-|2|Login with invalid email| 1. Navigate to `https://www.strategyconnect.co/` page<br>2. Verify if Home page has been opened<br>3.Click the Login button<br>4. Verify if the Strategy Service page got launched<br>5. Click the "KnowMore" button on "Technology Due Diligence" section on Strategy Service<br>6Verify if the Technical Due Diligence Page has been launched.<br>
+|2|Login with invalid email| 1. Navigate to `https://www.strategyconnect.co/` page<br>2. Verify if Home page has been opened<br>3.Click the Login button<br>4. //Enter invalid username<br>5.Click the Next button<br>6.Verify if the user is blocked.<br>
