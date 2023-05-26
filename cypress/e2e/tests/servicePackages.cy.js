@@ -48,16 +48,4 @@ describe('Service Packages', () => {
         cy.url().should('eq', data.homePageURL + data.URLtechnicalDueDiligencePage);
         cy.get(technicalDueDiligence.objectiveLocator).should('be.visible');
     });
-
-    it('allows to Know More about "Technology Due Diligence".', () => {
-        //Click the "KnowMore" button on "Technology Due Diligence" section on Home page
-        homepage.clickKnowMoreTechnologyDueDiligence();
-        //Verify if the Strategy Service page got launched
-        cy.get(strategyService.title).should('have.text', data.titleStrategyService);
-        //Click the "KnowMore" button on "Technology Due Diligence" section on Strategy Service
-        strategyService.clickKnowMoreTechnologyDueDiligence();
-        //Verify if the Technical Due Diligence Page has been launched
-        cy.url().should('eq', data.homePageURL + data.URLtechnicalDueDiligencePage);
-        cy.get(technicalDueDiligence.objectiveLocator).should('not.be.visible');
-    });
 });
