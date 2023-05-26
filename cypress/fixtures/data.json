@@ -1,12 +1,12 @@
 {
-  "homePageURL": "https://www.strategyconnect.co/",
-  "tabTitle": "Access Top 1% Experts - Drive Real Business Impact | StrategyConnect",
-  "titleHomePage": "Precision drive your projects with curated talent",
-  "titleStrategyService": "Service Packages",
-  "URLtechnicalDueDiligencePage": "strategy-services/technical-due-diligence",
-  "URLCommercialDueDiligencePage": "strategy-services/commercial-due-diligence",
-  "loginPageURL": "https://platform.strategyconnect.co/login",
-  "loginPageTabTitle": "Login | Strategy Connect",
-  "invalidEmail": "brenda@example.com",
-  "invalidEmailMessage": " Email does not exists "
+    "homePageURL": "https://www.strategyconnect.co/",
+    "tabTitle": "Access Top 1% Experts - Drive Real Business Impact | StrategyConnect",
+    "titleHomePage": "Precision drive your projects with curated talent",
+    "titleStrategyService": "Service Packages",
+    "URLtechnicalDueDiligencePage": "strategy-services/technical-due-diligence",
+    "URLCommercialDueDiligencePage": "strategy-services/commercial-due-diligence",
+    "loginPageURL": "https://platform.strategyconnect.co/login",
+    "loginPageTabTitle": "Login | Strategy Connect",
+    "invalidEmail": "brenda@example.com",
+    "invalidEmailMessage": " Email does not exists "
 }

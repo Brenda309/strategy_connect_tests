@@ -8,6 +8,7 @@ module.exports = defineConfig({
       allureWriter(on, config);
       return config;
     },
+    defaultCommandTimeout: 5000,
     baseUrl: 'https://www.strategyconnect.co'
   },
 });

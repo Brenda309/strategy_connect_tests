@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import data from "../../fixtures/data.json"
+import data from "../../fixtures/data.json";
 
 import {NavigateToURL} from '../../pages/1-navigateToURL.page'
 import {HomePage} from '../../pages/2-home.page'
@@ -46,6 +46,31 @@ describe('Service Packages', () => {
         strategyService.clickKnowMoreTechnologyDueDiligence();
         //Verify if the Technical Due Diligence Page has been launched
         cy.url().should('eq', data.homePageURL + data.URLtechnicalDueDiligencePage);
+        cy.get(technicalDueDiligence.objectiveLocator).should('be.visible');
+    });
+
+    it('allows to Know More about "Technology Due Diligence".', () => {
+        //Click the "KnowMore" button on "Technology Due Diligence" section on Home page
+        homepage.clickKnowMoreTechnologyDueDiligence();
+        //Verify if the Strategy Service page got launched
+        cy.get(strategyService.title).should('have.text', data.titleStrategyService);
+        //Click the "KnowMore" button on "Technology Due Diligence" section on Strategy Service
+        strategyService.clickKnowMoreTechnologyDueDiligence();
+        //Verify if the Technical Due Diligence Page has been launched
+        cy.url().should('eq', data.homePageURL + data.URLtechnicalDueDiligencePage);
+        cy.get(technicalDueDiligence.objectiveLocator).should('not.be.visible');
+    });
+
+
+    it('allows to Know More about "Commerce Due Diligence".', () => {
+        //Click the "KnowMore" button on "Technology Due Diligence" section on Home page
+        homepage.clickKnowMoreCommercialDueDiligence();
+        //Verify if the Strategy Service page got launched
+        cy.get(strategyService.title).should('have.text', data.titleStrategyService);
+        //Click the "KnowMore" button on "Commercial Due Diligence" section on Strategy Service
+        strategyService.clickKnowMoreCommercialDueDiligence();
+        //Verify if the Commercial Due Diligence Page has been launched
+        cy.url().should('eq', data.homePageURL + data.URLCommercialDueDiligencePage);
         cy.get(technicalDueDiligence.objectiveLocator).should('be.visible');
     });
 });
